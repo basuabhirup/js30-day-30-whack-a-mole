@@ -33,6 +33,8 @@ function addScore(e) {
   if(!e.isTrusted) return; //to prevent chating
   score++;
   scoreBoard.textContent = score;
+  let whackSound = new Audio("./whack_sound.mp3");
+  whackSound.play();
 }
 
 function startGame() {
